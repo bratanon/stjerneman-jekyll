@@ -1,0 +1,64 @@
+//
+// Site layout / containers
+// --------------------------------------------------
+
+
+@import (reference) "variables";
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: @stjerneman-container-width;
+  margin: 0 auto;
+  .clearfix();
+
+  @media screen and (max-width: 960px) {
+    max-width: unset;
+  }
+}
+
+main {
+  background-color: @stjerneman-background-color;
+}
+
+main > section {
+  padding: @stjerneman-gutter;
+
+  border-top: 1px solid #e1e1e1;
+
+  @media screen and (max-width: 520px) {
+    padding: @stjerneman-gutter / 2;
+  }
+
+  @media screen and (max-width: 360px) {
+    padding: @stjerneman-gutter / 4;
+  }
+}
+
+main > section > article,
+main > section > section {
+  h1 {
+    text-align: center;
+  }
+}
+
+section {
+  &.secondary {
+    background-color: @stjerneman-secondary-color;
+    color: @stjerneman-secondary-font-color;
+
+    h1, h2, h3, h4, h5, h5 {
+      color: @stjerneman-secondary-header-color;
+    }
+  }
+
+  &.tertiary {
+    background-color: @stjerneman-tertiary-color;
+    color: @stjerneman-tertiary-font-color;
+
+    h1, h2, h3, h4, h5, h5 {
+      color: @stjerneman-tertiary-header-color;
+    }
+  }
+}
+

@@ -1,0 +1,39 @@
+//
+// Buttons
+// --------------------------------------------------
+
+
+@import (reference) "variables";
+
+.button {
+  font: 700 20px/20px "Open Sans";
+  color: #FFF;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 3px;
+  background-color: #2CB17D;
+  min-width: 330px;
+  height: 60px;
+  padding: 20px 20px 0;
+  display: inline-block;
+  margin: 0 auto 1.4em;
+  clear: both;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #0a914e;
+    color: #fff;
+
+    &:after {
+      content: "\f061";
+      display: inline-block;
+      font-family: FontAwesome;
+      margin-left: 1em;
+    }
+  }
+}

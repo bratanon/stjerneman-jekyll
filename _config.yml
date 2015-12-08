@@ -1,0 +1,35 @@
+# Site settings
+title: stjerneman.com
+
+# Handling Reading
+exclude: [
+  "node_modules",
+  "bower_components",
+  "gulpfile.js",
+  "bower.json",
+  "package.json",
+  "Gemfile",
+  "Gemfile.lock"
+]
+
+# Conversion
+markdown: redcarpet
+excerpt_separator: <!--more-->
+
+# Serving
+host: "192.168.1.110"
+baseurl: "" # does not include hostname
+
+# Outputting
+permalink: /posts/:year/:month/:day/:title/
+timezone: Europe/Stockholm
+
+# Markdown Processors
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "strikethrough", "superscript", "with_toc_data"]
+
+# Jekyll Assets
+assets:
+  prefix: "/assets"
+  sources:
+    - "_assets/folder"

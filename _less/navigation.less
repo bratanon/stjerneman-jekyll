@@ -1,0 +1,124 @@
+//
+// Navigation
+// --------------------------------------------------
+
+@import (reference) "variables";
+
+nav {
+  background-color: @stjerneman-primary-color;
+  transition: background 500ms;
+
+  &.nav-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+
+  &.image-background:not(.nav-fixed) {
+    @media screen and (min-width: 520px) {
+      background-color: transparent;
+      border-bottom: none;
+    }
+  }
+}
+
+nav .container {
+  padding: (@stjerneman-gutter / 4) 0;
+  @media screen and (max-width: 960px) {
+    padding: (@stjerneman-gutter / 4) (@stjerneman-gutter / 2);
+  }
+}
+
+nav ul {
+  display: block;
+  float: right;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  li {
+    display: block;
+    float: left;
+    vertical-align: middle;
+  }
+
+  @media screen and (max-width: 590px) {
+    float: none;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+nav li a {
+  display: block;
+  padding: 0 10px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-wrap: avoid;
+  white-space: nowrap;
+  letter-spacing: .1em;
+
+  &:hover, &:active, &:focus {
+    color: @stjerneman-a-hover-color;
+  }
+}
+
+nav a.site-name {
+  display: inline-block;
+  float: left;
+  color: #fff;
+  font-family: 'Montserrat', serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  text-wrap: avoid;
+  white-space: nowrap;
+  text-transform: uppercase;
+
+  &:hover, &:active, &:focus {
+    color: @stjerneman-a-hover-color;
+  }
+
+  @media screen and (max-width: 590px) {
+    display: block;
+    float:none;
+    text-align: center;
+  }
+}
+
+//.navbar-toggle {
+//  position: relative;
+//  display: none;
+//  float: right;
+//  padding: 9px 10px;
+//  margin-top: 5px;
+//  background-color: transparent;
+//  border: 1px solid #c0c0c0;
+//  border-radius: 4px;
+//  cursor: pointer;
+//  overflow: visible;
+//
+//  @media screen and (max-width: 590px) {
+//    //display: block;
+//  }
+//
+//  .bar {
+//    display: block;
+//    width: 22px;
+//    height: 2px;
+//    border-radius: 1px;
+//    background-color: #fff;
+//    margin-bottom: 4px;
+//
+//    &:last-child {
+//      margin-bottom: 0;
+//    }
+//  }
+//}
+

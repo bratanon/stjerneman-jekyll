@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body>
+<header id="top-header">
+  {% include browserupgrade.html %}
+  {% include navigation.html %}
+  {% if page.image-header %}
+  <div class="bounce-down animated infinite">
+    <a href="#content">
+      <i class="fa fa-angle-down fa-3x"></i>
+    </a>
+  </div>
+  {% endif %}
+</header>
+<main id="content" role="main">
+  {{ content }}
+</main>
+{% include footer.html %}
+</body>
+</html>
