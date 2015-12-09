@@ -225,7 +225,6 @@
     }
 
     h2 {
-      display: inline-block;
       margin-bottom: 20px;
     }
   }
@@ -288,3 +287,27 @@
     };
   }
 }
+
+.portfolio-other-customers {
+  h2 {
+    color: #B4B4B4;
+    text-align: center;
+  }
+
+  .plain-list {
+    column-count: 3;
+  }
+
+  .plain-list h3 {
+    column-break-inside: avoid;
+    break-inside:avoid;
+    margin: 0;
+    padding: @stjerneman-gutter / 4 0;
+    border-bottom: 1px #efefef solid;
+    color: #B4B4B4;
+    font: 100 1em/1.5 'Roboto', sans-serif;
+  }
+}
+
+
+
