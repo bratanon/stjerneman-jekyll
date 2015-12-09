@@ -33,3 +33,9 @@ assets:
   prefix: "/assets"
   sources:
     - "_assets/folder"
+
+
+collections:
+  portfolio:
+    output: true
+    permalink: /portfolio/:title/

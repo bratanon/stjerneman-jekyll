@@ -1,0 +1,25 @@
+---
+layout: default
+title: Portfolio
+---
+<section class="portfolio-list">
+  <article class="container">
+    <h1>Portfolio</h1>
+    <hr>
+    {% for post in site.portfolio %}
+      <article>
+        <header>
+          <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+        </header>
+
+        <span class="portfolio-list--category">{{ post.category }}</span>
+
+        {% if post.tags %}
+          <span class="portfolio-list--tags">{{ post.tags | join: ', ' }}</span>
+        {% endif %}
+
+        {{ post.excerpt }}
+      </article>
+    {% endfor %}
+  </article>
+</section>

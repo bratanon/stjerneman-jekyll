@@ -1,0 +1,40 @@
+---
+layout: default
+---
+<section>
+  <article class="container">
+      <header class="post-header">
+          <h1>{{ page.title | markdownify | remove:'<p>' | remove: '</p>'}}</h1>
+          <hr>
+          <section class="post-meta">
+            <img src="/assets/images/me.jpg" alt="Emil Stjerneman" class="make-round" />
+            <strong>Emil Stjerneman</strong> in <strong>{{ page.category }}</strong>
+            {% if page.tags %}
+              <span>/</span>
+              <span class="tags">
+                {{ page.tags | join: ', ' }}
+              </span>
+            {% endif %}
+          </section>
+      </header>
+
+      <article class="post-content">
+        <div class="content">
+          {% if page.top-image %}
+            {% include image.html img=page.top-image %}
+          {% endif %}
+          {{ content }}
+        </div>
+        {% if page.site-urls %}
+          <section class="portfolio--site-url">
+          {% for link in page.site-urls %}
+            <a href="{{ link }}">{{ link }}</a>
+          {% endfor %}
+          </section>
+        {% endif %}
+      </article>
+  </article>
+</section>
+{% if page.comments %}
+<script id="dsq-count-scr" src="//stjerneman.disqus.com/count.js" async></script>
+{% endif %}
