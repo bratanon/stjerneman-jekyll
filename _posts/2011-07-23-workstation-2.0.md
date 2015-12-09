@@ -9,7 +9,7 @@ categories:
  – posts
 ---
 
-Jag har tidigare viset er ["4 skärmar är fler än 3 elefanter"](/blog/workstation) och hur det blevmed mina nya LG 24"
+Jag har tidigare viset er ["4 skärmar är fler än 3 elefanter"]({% post_url 2009-10-04-4-skarmar-ar-fler-an-3-elefanter %}) och hur det blevmed mina nya LG 24"
 skärmar och två 19". Många trodde jag var nöjd där, vilket jag också var fram tills då min ena 19" gick åt pipan.
 
 <!--more-->
