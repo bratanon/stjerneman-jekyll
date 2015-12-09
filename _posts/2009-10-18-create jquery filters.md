@@ -4,6 +4,8 @@ title: Create your own jQuery filters
 type: post
 published: true
 comments: true
+categories:
+ – posts
 ---
 
 Ever needed some custom filters with jQuery? Its easy to do yourself.

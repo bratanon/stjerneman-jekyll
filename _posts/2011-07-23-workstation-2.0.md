@@ -5,6 +5,8 @@ type: post
 published: true
 comments: true
 image-header: true
+categories:
+ – posts
 ---
 
 Jag har tidigare viset er ["4 skärmar är fler än 3 elefanter"](/blog/workstation) och hur det blevmed mina nya LG 24"

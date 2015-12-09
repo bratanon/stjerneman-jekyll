@@ -4,6 +4,8 @@ title: Setup ntp Linux Arch
 type: post
 published: true
 comments: true
+categories:
+ – posts
 ---
 A quick guide on how to setup ntp with linux arch.
 

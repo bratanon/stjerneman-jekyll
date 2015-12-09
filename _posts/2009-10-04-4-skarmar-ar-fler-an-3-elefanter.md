@@ -4,6 +4,8 @@ title: 4 skärmar är fler än 3 elefanter
 type: post
 published: true
 comments: true
+categories:
+ – posts
 ---
 
 Man kan inte ha förmånga skärmar. [Al gore har tre 30](http://bigtrousers.com.au/blog/wp-content/uploads/2007/05/al-gore-desk.jpg)
