@@ -2,6 +2,7 @@
 layout: portfolio
 title: Five Grams of Perfection
 published: true
+comments: false
 tags:
   - Drupal
   - PHP

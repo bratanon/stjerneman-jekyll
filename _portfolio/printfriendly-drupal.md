@@ -2,6 +2,7 @@
 layout: portfolio
 title: Printfriendly for Drupal
 published: true
+comments: true
 tags:
   - Drupal
   - PHP

@@ -2,6 +2,7 @@
 layout: portfolio
 title: Linkit - the new way to link with Drupal
 published: true
+comments: true
 site-urls:
   - https://www.drupal.org/project/linkit
   - https://www.drupal.org/project/issues/linkit?categories=All

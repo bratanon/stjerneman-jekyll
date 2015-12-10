@@ -2,6 +2,7 @@
 layout: portfolio
 title: Årets Yngwielåt
 published: true
+comments: false
 site-urls:
   - http://åretsyngwielåt.se
 tags:

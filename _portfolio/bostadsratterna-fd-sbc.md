@@ -2,6 +2,7 @@
 layout: portfolio
 title: Bostadsrätterna f.d. SBC
 published: true
+comments: false
 site-urls:
   - http://www.bospararna.se
   - http://demo.bostadsratterna.se

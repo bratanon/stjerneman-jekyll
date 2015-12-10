@@ -2,6 +2,7 @@
 layout: portfolio
 title: Maxlength with jQuery
 published: true
+comments: true
 tags:
   - jQuery
   - JavaScript
