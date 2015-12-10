@@ -8,7 +8,8 @@ site-urls:
 tags:
   - Drupal
   - PHP
-category: Site
+category: Drupal module
+date: 2013-12-23
 ---
 
 *Linkit* provides an **easy interface for internal and external linking** with editors and fields by using an

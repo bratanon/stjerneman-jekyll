@@ -12,6 +12,7 @@ tags:
   - Spotify
 category: Site
 top-image: assets/portfolio/yngwie2015.jpg
+date: 2015-08-09
 ---
 
 How can less be more? Its impossible, more is more!

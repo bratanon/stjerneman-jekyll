@@ -6,7 +6,7 @@ title: Portfolio
   <article class="container">
     <h1>Portfolio</h1>
     <hr>
-    {% for post in site.portfolio %}
+    {% for post in site.portfolio reversed  | sort: 'date' %}
       <article>
         <header>
           <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
@@ -25,7 +25,7 @@ title: Portfolio
 
   <section class="portfolio-other-customers">
     <article class="container">
-      <h2>Andra projekt & kunder jag jobbat med</h2>
+      <h2>Other clients and projects I've been involved with</h2>
       <div class="plain-list">
         <h3>Alingsås kommun</h3>
         <h3>Cad-Q</h3>

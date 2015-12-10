@@ -10,6 +10,7 @@ tags:
   - PHP
 category: Site
 top-image: assets/portfolio/bospararna.png
+date: 2013-12-19
 ---
 
 Bostadsrätterna är en rikstäckande organisation för Sveriges bostadsrättsföreningar som bildades 1921 och är därmed

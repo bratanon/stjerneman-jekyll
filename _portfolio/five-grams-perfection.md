@@ -7,6 +7,7 @@ tags:
   - PHP
 category: Site
 top-image: assets/portfolio/fivegrams-big.png
+date: 2013-12-19
 ---
 
 Five Grams of Perfection är ett göteborgsbaserat rockband. Deras webbplats ger besökarna möjlighet att se deras videos,
