@@ -22,6 +22,12 @@ tjänster.
 
 <!--more-->
 
+Bostadsrätterna är en rikstäckande organisation för Sveriges bostadsrättsföreningar som bildades 1921 och är därmed
+Sveriges äldsta bostadsrättsorganisation.
+
+De har ett stort antal medlemsföreningar och bosparare i hela Sverige som har tillgång till flera avancerade webbaserade
+tjänster.
+
 ## Bospararna
 Tjänsten består främst av ett administrationsverktyg där bospararen själv kan hantera sina uppgifter för sitt sparande.
 Även Bospararnas egen kundtjänst använder en del av systemet för att hantera sina bosparare på ett smidigt sätt.

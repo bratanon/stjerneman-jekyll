@@ -23,7 +23,7 @@ layout: default
           {% if page.top-image %}
             {% include image.html img=page.top-image %}
           {% endif %}
-          {{ content }}
+          {{ content | remove_first: page.excerpt }}
 
           {% if page.site-urls %}
           <section class="portfolio--site-url">

@@ -4,6 +4,7 @@ title: Fix tzselect error in Ubuntu 14.04
 type: post
 published: true
 comments: true
+disqus_id: 7f4949b2-9380-4577-b97e-c78ad1aaf365
 categories:
  – posts
 ---

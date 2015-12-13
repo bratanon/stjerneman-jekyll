@@ -3,6 +3,7 @@ layout: portfolio
 title: Linkit - the new way to link with Drupal
 published: true
 comments: true
+disqus_id: fe3fdc8b-add9-4279-b5f2-972758ed002d
 site-urls:
   - https://www.drupal.org/project/linkit
   - https://www.drupal.org/project/issues/linkit?categories=All
@@ -18,6 +19,11 @@ date: 2013-12-23
 default**. Linkit has three major advantages over traditional linking
 
 <!--more-->
+
+<img src="/assets/portfolio/linkit2013.png" class="content-image-right">
+*Linkit* provides an **easy interface for internal and external linking** with editors and fields by using an
+**autocomplete field**. Linkit links to nodes, users, managed files, terms and have basic support for **all entities by
+default**. Linkit has three major advantages over traditional linking
 
 1. The user does not have to copy or remember a URL.
 2. It is a sustainable solution for internal linking.
@@ -77,3 +83,8 @@ Our new **robust and flexible API**
 
 Take a look at the API file called [linkit.api.php](http://cgit.drupalcode.org/linkit/tree/linkit.api.php) in Linkit
 core.
+
+## Video tutorials
+
+* https://www.youtube.com/watch?v=uB99DyFmxOY Thank to Ivan Zugec.
+* https://www.youtube.com/watch?v=dUJT6EIhcm0 Thanks to Brian Lewis.

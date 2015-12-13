@@ -1,6 +1,6 @@
 # Site settings
 title: stjerneman.com
-
+url: https://stjerneman.com
 # Handling Reading
 exclude: [
   "node_modules",

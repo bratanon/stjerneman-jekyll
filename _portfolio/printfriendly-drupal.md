@@ -3,6 +3,7 @@ layout: portfolio
 title: Printfriendly for Drupal
 published: true
 comments: true
+disqus_id: 9e18f63e-8cc1-4552-92f3-5f560aab4d21
 tags:
   - Drupal
   - PHP
@@ -18,6 +19,13 @@ The Print Friendly & PDF button saves paper and ink when printing or creating a 
 when printed. Add the button now, and your users will see the difference.
 
 <!--more-->
+
+<img src="/assets/portfolio/printfriendly.png" class="content-image-right">
+The #1 Print and PDF button for your Drupal site. Printer Friendly pages without coding, css, or print.css. Fast, easy,
+and professional.
+
+The Print Friendly & PDF button saves paper and ink when printing or creating a PDF. It's fast, easy, and looks great
+when printed. Add the button now, and your users will see the difference.
 
 ## How Print Friendly & PDF Works
 The Print Friendly & PDF button automatically creates printer friendly and PDF versions of your pages without the hassle

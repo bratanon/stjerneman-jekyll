@@ -4,14 +4,15 @@ title: Setup ntp Linux Arch
 type: post
 published: true
 comments: true
-categories:
- – posts
+disqus_id: 03a33a9e-5e0f-476f-94a1-c2395c6bc0f4
 ---
 A quick guide on how to setup ntp with linux arch.
 
 <!--more-->
 
-Install the required package called `npt` https://www.archlinux.org/packages/?name=ntp.
+NPT or Network Time Protocol is a protocol for clock synchronization.
+
+To use ntp in Linux arch you have to install the required package called `npt` https://www.archlinux.org/packages/?name=ntp.
 
 ```sh
 # pacman -S ntp
@@ -29,4 +30,4 @@ Update the time.
 # ntpd -qg
 ```
 
-Once you have systemd managing this operation, you should never have to worry about setting the clock agian.
+Once you have systemd managing this operation, you should never have to worry about setting the clock again.

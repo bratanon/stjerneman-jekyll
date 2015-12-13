@@ -4,12 +4,17 @@ title: Create your own jQuery filters
 type: post
 published: true
 comments: true
+disqus_id: f3f8354e-a1ff-4c4d-ac91-e64edb8dac03
 categories:
  – posts
 ---
 
 Ever needed some custom filters with jQuery? Its easy to do yourself.
+
 <!--more-->
+
+Ever needed some custom filters with jQuery? Its easy to do yourself.
+
 The syntax is simply this:
 
 ```javascript
