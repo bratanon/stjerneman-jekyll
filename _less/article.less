@@ -289,10 +289,8 @@
 }
 
 .portfolio-other-customers {
-  h2 {
-    color: #B4B4B4;
-    text-align: center;
-  }
+  color: #B4B4B4;
+  text-align: center;
 
   .plain-list {
     column-count: 3;
@@ -309,5 +307,32 @@
   }
 }
 
+
+.portfolio-cvs-projects {
+  text-align: center;
+
+  a {
+    color: @stjerneman-tertiary-font-color;
+    display: inline-block;
+    animation: none;
+
+    &:hover, &:active, &:focus {
+      color: @stjerneman-a-hover-color;
+
+    }
+
+    i {
+      font-size: 15em;
+      margin: @stjerneman-gutter / 4 @stjerneman-gutter;
+      display: block;
+    }
+
+    span {
+      clear: both;
+      display: inline-block;
+      font-weight: 700;
+    }
+  }
+}
 
 

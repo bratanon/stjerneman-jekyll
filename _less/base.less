@@ -227,9 +227,9 @@ a {
     color: @stjerneman-a-hover-color;
   }
 
-  main &:not(.button):hover:after,
-  main &:not(.button):active:after,
-  main &:not(.button):focus:after {
+  main &:not(.button):not(.no-link-hover):hover:after,
+  main &:not(.button):not(.no-link-hover):active:after,
+  main &:not(.button):not(.no-link-hover):focus:after {
     position: absolute;
     left: 0;
     right: 0;
