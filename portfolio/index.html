@@ -11,12 +11,15 @@ title: Portfolio
         <header class="portfolio-list--header">
           <h2><a href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a></h2>
           <span class="portfolio-list--category">{{ item.category }}</span>
+
           {% if item.tags.size > 0 %}
             <span class="portfolio-list--tags">{{ item.tags | join: ', ' }}</span>
           {% endif %}
+
           {% if item.comments %}
             <a href="{{ item.url | prepend: site.baseurl }}#disqus_thread" data-disqus-identifier="{{ item.disqus_id }}" class="portfolio-list--comments"></a>
           {% endif %}
+
         </header>
         {{ item.excerpt }}
       </article>

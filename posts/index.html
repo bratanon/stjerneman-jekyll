@@ -10,12 +10,15 @@ title: Posts
       <article class="animation bounceInUp">
         <header class="post-list--header">
           <h2><a href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a></h2>
+
           {% if item.tags.size > 0 %}
             <span class="post-list--tags">{{ item.tags | join: ', ' }}</span>
           {% endif %}
+
           {% if item.comments %}
             <a href="{{ item.url | prepend: site.baseurl }}#disqus_thread" data-disqus-identifier="{{ item.disqus_id }}" class="post-list--comments"></a>
           {% endif %}
+
         </header>
         {{ item.excerpt }}
       </article>
