@@ -218,10 +218,12 @@
     margin-bottom: 0;
   }
   article {
-    margin-bottom: @stjerneman-gutter;
 
-    &:last-child {
-      margin-bottom: 0;
+
+    &:not(:last-of-type) {
+      margin-bottom: @stjerneman-gutter;
+      padding-bottom: @stjerneman-gutter;
+      border-bottom: 1px #efefef solid;
     }
 
     h2 {
