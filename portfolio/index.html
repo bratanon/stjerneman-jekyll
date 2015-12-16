@@ -6,18 +6,19 @@ title: Portfolio
   <article class="container">
     <h1>Portfolio</h1>
     <hr>
-    {% for post in site.portfolio reversed  | sort: 'date' %}
-      <article>
-        <header>
-          <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-          <span class="portfolio-list--category">{{ post.category }}</span>
-
-          {% if post.tags %}
-          <span class="portfolio-list--tags">{{ post.tags | join: ', ' }}</span>
+    {% for item in site.portfolio reversed  | sort: 'date' %}
+      <article class="animation bounceInUp">
+        <header class="portfolio-list--header">
+          <h2><a href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a></h2>
+          <span class="portfolio-list--category">{{ item.category }}</span>
+          {% if item.tags.size > 0 %}
+            <span class="portfolio-list--tags">{{ item.tags | join: ', ' }}</span>
+          {% endif %}
+          {% if item.comments %}
+            <a href="{{ item.url | prepend: site.baseurl }}#disqus_thread" data-disqus-identifier="{{ item.disqus_id }}" class="portfolio-list--comments"></a>
           {% endif %}
         </header>
-
-        {{ post.excerpt }}
+        {{ item.excerpt }}
       </article>
     {% endfor %}
   </article>

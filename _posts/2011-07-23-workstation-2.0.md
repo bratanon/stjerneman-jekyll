@@ -6,8 +6,8 @@ published: true
 comments: true
 disqus_id: b01af18a-7927-46b1-86e3-0b72719d28ed
 image-header: true
-categories:
- – posts
+tags:
+  - Home office
 ---
 
 Jag har tidigare viset er ["4 skärmar är fler än 3 elefanter"]({% post_url 2009-10-04-4-skarmar-ar-fler-an-3-elefanter %}) och hur det blevmed mina nya LG 24"

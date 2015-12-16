@@ -5,8 +5,11 @@ type: post
 published: true
 comments: true
 disqus_id: 7f4949b2-9380-4577-b97e-c78ad1aaf365
-categories:
- – posts
+tags:
+  - Linux
+  - Ubuntu
+  - NTP
+  - Timezone
 ---
 <!--more-->
 When selecting timezone using `tzselect` in Ubuntu 14.04 you will be promted with an error.

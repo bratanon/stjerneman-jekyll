@@ -218,8 +218,6 @@
     margin-bottom: 0;
   }
   article {
-
-
     &:not(:last-of-type) {
       margin-bottom: @stjerneman-gutter;
       padding-bottom: @stjerneman-gutter;
@@ -232,11 +230,49 @@
   }
 }
 
+.content-list--header {
+  &:not(h2) {
+    color: #B4B4B4;
+    font-size: .8em;
+  }
+}
+
+.content-list--tags {
+  &:before {
+    .font-awesome;
+    content: "\f02c";
+    padding-right: 0.8em;
+  }
+}
+
+.content-list--comments {
+  margin-left: 1.5em;
+
+  &:before {
+    .font-awesome;
+    content: "\f086";
+    padding-right: 0.8em;
+  }
+}
+
+
 /**
  * Post
  */
 .post-list {
   &:extend(.content-list all);
+}
+
+.post-list--header {
+  &:extend(.content-list--header all);
+}
+
+.post-list--tags {
+  &:extend(.content-list--tags all);
+}
+
+.post-list--comments {
+  &:extend(.content-list--comments all);
 }
 
 /**
@@ -246,9 +282,11 @@
   &:extend(.content-list all);
 }
 
+.portfolio-list--header {
+  &:extend(.content-list--header all);
+}
+
 .portfolio-list--category {
-  color: #B4B4B4;
-  font-size: .8em;
   margin-right: 1.5em;
 
   &:before {
@@ -259,14 +297,11 @@
 }
 
 .portfolio-list--tags {
-  color: #B4B4B4;
-  font-size: .8em;
+  &:extend(.content-list--tags all);
+}
 
-  &:before {
-    .font-awesome;
-    content: "\f02c";
-    padding-right: 0.8em;
-  }
+.portfolio-list--comments {
+  &:extend(.content-list--comments all);
 }
 
 .portfolio--site-url {

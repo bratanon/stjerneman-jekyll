@@ -3,7 +3,7 @@ layout: portfolio
 title: Maxlength with jQuery
 published: true
 comments: true
-disqus_id: 79666231-9ebc-4a1d-a2ad-fe31d973c173
+disqus_id: b40ff3cb-8ec4-4568-87e6-c089add22763
 tags:
   - jQuery
   - JavaScript

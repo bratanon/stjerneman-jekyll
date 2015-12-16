@@ -5,6 +5,10 @@ type: post
 published: true
 comments: true
 disqus_id: 03a33a9e-5e0f-476f-94a1-c2395c6bc0f4
+tags:
+  - Linux
+  - Arch
+  - NTP
 ---
 A quick guide on how to setup ntp with linux arch.
 
