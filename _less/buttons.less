@@ -14,11 +14,15 @@
   border-radius: 3px;
   background-color: #2CB17D;
   min-width: 330px;
-  height: 60px;
-  padding: 20px 20px 0;
+  min-height: 60px;
+  padding: 20px;
   display: inline-block;
   margin: 0 auto 1.4em;
   clear: both;
+
+  @media screen and (max-width: 400px) {
+    min-width: 100%;
+  }
 
   &:last-child {
     margin-bottom: 0;
