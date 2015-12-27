@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
 {% include head.html %}
+
+{% if page.page-class %}
+<body class="{{ page.page-class }}">
+{% else %}
 <body>
+{% endif %}
+
 <header id="top-header">
   {% include browserupgrade.html %}
   {% include navigation.html %}

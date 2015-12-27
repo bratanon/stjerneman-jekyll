@@ -9,15 +9,17 @@ layout: default
           <section class="post-meta">
             <img src="/assets/images/me.jpg" alt="Emil Stjerneman" class="make-round" />
             <strong>Emil Stjerneman</strong> in <strong>{{ page.category }}</strong>
-            {% if page.tags %}
-              <span>/</span>
-              <span class="tags">
-                {{ page.tags | join: ', ' }}
-              </span>
-            {% endif %}
+            <span>/</span>
+            {{ page.date | date: "%A %b %-d, %Y" }}
+
             {% if page.comments %}
               <span>/</span>
               <a href="#disqus_thread" data-disqus-identifier="{{ page.disqus_id }}"></a>
+            {% endif %}
+
+            {% if page.tags %}
+            <br/>
+            {{ page.tags | join: ", " }}
             {% endif %}
           </section>
       </header>

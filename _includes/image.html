@@ -1,6 +1,6 @@
 <figure class="image-wrapper" >
   {% if include.url %}
-  <a href="{{ include.url }}" title="{{ include.title }}" target="_blank">
+  <a href="{{ include.url }}" title="{{ include.title }}" target="_blank" class="no-link-hover">
   {% endif %}
   <img src="{{ site.baseurl }}/{{ include.img }}" alt="{{ include.title }}"/>
   {% if include.url %}

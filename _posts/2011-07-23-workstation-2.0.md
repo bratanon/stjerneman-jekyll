@@ -6,6 +6,7 @@ published: true
 comments: true
 disqus_id: b01af18a-7927-46b1-86e3-0b72719d28ed
 image-header: true
+image-header-title: Workstation 2.0
 tags:
   - Home office
 ---
@@ -52,6 +53,11 @@ mig lite nya goa grejer där tre stycken Philips 27” finns med i beställninge
   caption="Dagen efter var de två gamla LG 24\"arna på plats på väggen."
 %}
 {% include image.html img="assets/posts/workstation-2.0/IMAG0010.jpg" %}
+
+{% include image.html
+  img="assets/posts/workstation-2.0/20130826_124410.png"
+  url="/assets/posts/workstation-2.0/20130826_124410.png"
+%}
 
 <style>
 #top-header {
