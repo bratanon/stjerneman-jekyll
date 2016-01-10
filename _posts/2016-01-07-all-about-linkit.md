@@ -11,7 +11,7 @@ tags:
 ---
 Drupal 8 is here, and so is Linkit 8. What's new? What's have been changed? How was I thinking?
 
-In this post I'll try to answer these question.
+In this post I'll try to answer these questions.
 
 <!--more-->
 
