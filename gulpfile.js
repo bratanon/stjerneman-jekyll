@@ -25,11 +25,13 @@ gulp.task('scripts', function () {
 
 gulp.task('vendor-css', ['icons'], function () {
   gulp.src([
-    '_less/vendor.less',
     'bower_components/normalize.css/normalize.css',
     'bower_components/fontawesome/css/font-awesome.min.css',
     'bower_components/animate.css/animate.css',
-    'node_modules/highlight.js/styles/github-gist.css'
+    'node_modules/highlight.js/styles/github-gist.css',
+    'bower_components/slick-carousel/slick/slick.less',
+    'bower_components/slick-carousel/slick/slick-theme.less',
+    '_less/vendor.less'
   ])
   .pipe(less())
   .pipe(concat('vendor.min.css'))
@@ -40,7 +42,8 @@ gulp.task('vendor-css', ['icons'], function () {
 gulp.task('vendor-script', function () {
   gulp.src([
       'bower_components/jquery/dist/jquery.min.js',
-      'bower_components/WOW/dist/wow.min.js'
+      'bower_components/WOW/dist/wow.min.js',
+      'bower_components/slick-carousel/slick/slick.min.js'
     ])
     .pipe(uglify())
     .pipe(concat('vendor.min.js'))
@@ -48,7 +51,10 @@ gulp.task('vendor-script', function () {
 });
 
 gulp.task('icons', function () {
-  gulp.src(['bower_components/fontawesome/fonts/**/*'])
+  gulp.src([
+    'bower_components/fontawesome/fonts/**/*',
+    'bower_components/slick-carousel/slick/fonts/**/*'
+  ])
   .pipe(gulp.dest('fonts'));
 });
 
