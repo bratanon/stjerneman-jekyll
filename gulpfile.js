@@ -1,29 +1,27 @@
-'use strict';
+const gulp = require('gulp');
+const concat = require('gulp-concat');
+const less = require('gulp-less');
+const cleanCSS = require('gulp-clean-css');
+const uglify = require('gulp-uglify');
+const autoprefixer = require('gulp-autoprefixer');
 
-var gulp = require('gulp');
-var concat = require('gulp-concat');
-var less = require('gulp-less');
-var minifyCSS = require('gulp-minify-css');
-var uglify = require('gulp-uglify');
-var autoprefixer = require('gulp-autoprefixer');
-
-gulp.task('styles', function () {
+gulp.task('styles', () => {
   gulp.src(['_less/stjerneman.less'])
   .pipe(less())
   .pipe(autoprefixer())
-  .pipe(minifyCSS())
+  .pipe(cleanCSS())
   .pipe(concat('stjerneman.min.css'))
   .pipe(gulp.dest('stylesheets'))
 });
 
-gulp.task('scripts', function () {
+gulp.task('scripts', () =>  {
   gulp.src(['_javascripts/*.js', '!_javascripts/*.min.js'])
     .pipe(uglify())
     .pipe(concat('stjerneman.min.js'))
     .pipe(gulp.dest('javascripts'));
 });
 
-gulp.task('vendor-css', ['icons'], function () {
+gulp.task('vendor-css', ['icons'], () => {
   gulp.src([
     'bower_components/normalize.css/normalize.css',
     'bower_components/fontawesome/css/font-awesome.min.css',
@@ -39,7 +37,7 @@ gulp.task('vendor-css', ['icons'], function () {
   .pipe(gulp.dest('stylesheets'));
 });
 
-gulp.task('vendor-script', function () {
+gulp.task('vendor-script', () => {
   gulp.src([
       'bower_components/jquery/dist/jquery.min.js',
       'bower_components/WOW/dist/wow.min.js',
@@ -50,7 +48,7 @@ gulp.task('vendor-script', function () {
     .pipe(gulp.dest('javascripts'));
 });
 
-gulp.task('icons', function () {
+gulp.task('icons', () =>  {
   gulp.src([
     'bower_components/fontawesome/fonts/**/*',
     'bower_components/slick-carousel/slick/fonts/**/*'
@@ -58,7 +56,7 @@ gulp.task('icons', function () {
   .pipe(gulp.dest('fonts'));
 });
 
-gulp.task('default', ['styles', 'scripts'], function () {
+gulp.task('default', ['styles', 'scripts'], () => {
   gulp.watch('_less/*.less', ['styles']);
   gulp.watch(['_javascripts/**/*.js', '!_javascripts/javascripts/**/*.min.js'], ['scripts']);
 });
