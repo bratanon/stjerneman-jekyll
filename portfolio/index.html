@@ -6,7 +6,7 @@ title: Portfolio
   <article class="container">
     <h1>Portfolio</h1>
     <hr>
-    {% for item in site.portfolio reversed  | sort: 'date' %}
+    {% for item in site.portfolio reversed | sort: 'date' %}
       <article class="animation bounceInUp">
         <header class="portfolio-list--header">
           <h2><a href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a></h2>
