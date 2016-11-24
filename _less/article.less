@@ -9,15 +9,26 @@
  * About me
  */
 #about-me {
-  .make-round {
+  .about-me-image {
+    max-width: 350px;
+    background: url('/assets/images/me.jpg') center center no-repeat;
+    background-size: contain;
+    width: 100%;
+    overflow:hidden;
+
     display: block;
     border-radius: 50%;
-    max-width: 350px;
     margin: 0 auto (@stjerneman-gutter / 2);
 
     @media screen and (max-width: 520px) {
       max-width: 75%;
       margin: (@stjerneman-gutter / 2) auto;
+    }
+
+    &:before {
+      content: "";
+      float: left;
+      padding-bottom: 100%;
     }
   }
 }
@@ -196,7 +207,7 @@
     border-radius: 50%;
     max-width: 30px;
     margin-right: .5em;
-    
+
   }
   h4 {
     margin-bottom: .5em;
