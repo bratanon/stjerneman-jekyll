@@ -118,14 +118,3 @@ $(document).ready(function(){
   $('#maxlenght-demo-textarea-slide, #maxlenght-demo-input-slide').maxlength({slider: true});
 });
 ```
-
-<script>
-(function ($) {
-  $(document).ready(function() {
-    $('#maxlenght-demo-textarea').maxlength();
-    $('#maxlenght-demo-input').maxlength();
-    $('#maxlenght-demo-trigger').maxlength({events: ['blur']});
-    $('#maxlenght-demo-textarea-slide, #maxlenght-demo-input-slide').maxlength({slider: true});
-  });
-})(jQuery);
-</script>

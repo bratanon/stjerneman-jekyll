@@ -5,8 +5,6 @@ The Jekyll version of stjerneman.com
 ## Build Installation
 `npm install`
 
-`bower install`
-
 `gem install`
 
 `bundle install`
@@ -14,8 +12,9 @@ The Jekyll version of stjerneman.com
 ### Gulp
 `gulp`
 
-`gulp full` for all including vendor
-
+`gulp production`
 
 ## Run
 `jekyll serve`
+
+`jekyll build`

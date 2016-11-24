@@ -6,7 +6,7 @@ const uglify = require('gulp-uglify');
 const autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('styles', () => {
-  gulp.src(['_less/stjerneman.less'])
+  return gulp.src(['_less/stjerneman.less'])
   .pipe(less())
   .pipe(autoprefixer())
   .pipe(cleanCSS())
@@ -15,43 +15,41 @@ gulp.task('styles', () => {
 });
 
 gulp.task('scripts', () =>  {
-  gulp.src(['_javascripts/*.js', '!_javascripts/*.min.js'])
+  return gulp.src([
+    'node_modules/jquery/dist/jquery.min.js',
+    'node_modules/slick-carousel/slick/slick.min.js',
+    '_javascripts/*.js',
+    '!_javascripts/*.min.js'
+  ])
     .pipe(uglify())
     .pipe(concat('stjerneman.min.js'))
     .pipe(gulp.dest('javascripts'));
 });
 
-gulp.task('vendor-css', ['icons'], () => {
-  gulp.src([
-    'bower_components/normalize.css/normalize.css',
-    'bower_components/fontawesome/css/font-awesome.min.css',
+
+gulp.task('vendor:css', ['icons'], () => {
+  return gulp.src([
+    '_less/fonts.less',
+    'node_modules/normalize.css/normalize.css',
+    'node_modules/font-awesome/css/font-awesome.min.css',
     'node_modules/highlight.js/styles/github-gist.css',
-    'bower_components/slick-carousel/slick/slick.less',
-    'bower_components/slick-carousel/slick/slick-theme.less',
-    '_less/vendor.less'
+    'node_modules/slick-carousel/slick/slick.less',
+    'node_modules/slick-carousel/slick/slick-theme.less',
+    '_less/vendors/slick-overrides.less',
   ])
   .pipe(less())
-  .pipe(concat('vendor.min.css'))
+  .pipe(autoprefixer())
   .pipe(cleanCSS())
+  .pipe(concat('vendor.min.css'))
   .pipe(gulp.dest('stylesheets'));
 });
 
-gulp.task('vendor-script', () => {
-  gulp.src([
-      'bower_components/jquery/dist/jquery.min.js',
-      'bower_components/slick-carousel/slick/slick.min.js'
-    ])
-    .pipe(uglify())
-    .pipe(concat('vendor.min.js'))
-    .pipe(gulp.dest('javascripts'));
-});
-
 gulp.task('icons', () =>  {
-  gulp.src([
+  return gulp.src([
     'bower_components/fontawesome/fonts/**/*',
     'bower_components/slick-carousel/slick/fonts/**/*'
   ])
-  .pipe(gulp.dest('fonts'));
+    .pipe(gulp.dest('fonts'));
 });
 
 gulp.task('default', ['styles', 'scripts'], () => {
@@ -59,4 +57,4 @@ gulp.task('default', ['styles', 'scripts'], () => {
   gulp.watch(['_javascripts/**/*.js', '!_javascripts/javascripts/**/*.min.js'], ['scripts']);
 });
 
-gulp.task('full', ['styles', 'scripts', 'vendor-css', 'vendor-script']);
+gulp.task('production', ['styles', 'scripts', 'vendor:css']);
