@@ -13,17 +13,6 @@
         scrollTop: $(target).offset().top
       }, 600);
     });
-
-    if (WOW !== undefined) {
-      var wow = new WOW({
-        boxClass: 'animation',
-        animateClass: 'animated',
-        offset: 0,
-        mobile: true
-      });
-
-      wow.init();
-    }
   });
 })(jQuery, window, document);
 

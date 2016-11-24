@@ -25,7 +25,6 @@ gulp.task('vendor-css', ['icons'], () => {
   gulp.src([
     'bower_components/normalize.css/normalize.css',
     'bower_components/fontawesome/css/font-awesome.min.css',
-    'bower_components/animate.css/animate.css',
     'node_modules/highlight.js/styles/github-gist.css',
     'bower_components/slick-carousel/slick/slick.less',
     'bower_components/slick-carousel/slick/slick-theme.less',
@@ -33,14 +32,13 @@ gulp.task('vendor-css', ['icons'], () => {
   ])
   .pipe(less())
   .pipe(concat('vendor.min.css'))
-  .pipe(minifyCSS())
+  .pipe(cleanCSS())
   .pipe(gulp.dest('stylesheets'));
 });
 
 gulp.task('vendor-script', () => {
   gulp.src([
       'bower_components/jquery/dist/jquery.min.js',
-      'bower_components/WOW/dist/wow.min.js',
       'bower_components/slick-carousel/slick/slick.min.js'
     ])
     .pipe(uglify())
