@@ -17,6 +17,19 @@
 })(jQuery, window, document);
 
 /**
+ * POST 2009-10-18-create jquery filters.md
+ */
+(function ($) {
+  $.expr[':'].width = function(el, i, match, array) {
+    return $(el).width() > match[3];
+  };
+
+  $(document).ready(function () {
+    $('#filter_1').find('p:width(210)').css({color: '#FF0000'});
+  });
+})(jQuery);
+
+/**
  * POST 2016-01-07-all-about-linkit.md
  */
 (function ($) {

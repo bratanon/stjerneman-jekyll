@@ -39,4 +39,4 @@ crashlytics-build.properties
 ### Gulp stuff ###
 *.min.js
 *.min.css
-fonts
+/assets/fonts

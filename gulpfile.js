@@ -11,7 +11,7 @@ gulp.task('styles', () => {
   .pipe(autoprefixer())
   .pipe(cleanCSS())
   .pipe(concat('stjerneman.min.css'))
-  .pipe(gulp.dest('stylesheets'))
+  .pipe(gulp.dest('assets/stylesheets'))
 });
 
 gulp.task('scripts', () =>  {
@@ -23,33 +23,32 @@ gulp.task('scripts', () =>  {
   ])
     .pipe(uglify())
     .pipe(concat('stjerneman.min.js'))
-    .pipe(gulp.dest('javascripts'));
+    .pipe(gulp.dest('assets/javascripts'));
 });
 
 
-gulp.task('vendor:css', ['icons'], () => {
+gulp.task('vendor:css', () => {
   return gulp.src([
     '_less/fonts.less',
     'node_modules/normalize.css/normalize.css',
     'node_modules/font-awesome/css/font-awesome.min.css',
     'node_modules/highlight.js/styles/github-gist.css',
     'node_modules/slick-carousel/slick/slick.less',
-    'node_modules/slick-carousel/slick/slick-theme.less',
     '_less/vendors/slick-overrides.less',
   ])
   .pipe(less())
   .pipe(autoprefixer())
-  .pipe(cleanCSS())
+  .pipe(cleanCSS({keepSpecialComments : 0}))
   .pipe(concat('vendor.min.css'))
-  .pipe(gulp.dest('stylesheets'));
+  .pipe(gulp.dest('assets/stylesheets'));
 });
 
-gulp.task('icons', () =>  {
+gulp.task('vendor:fonts', () =>  {
   return gulp.src([
-    'bower_components/fontawesome/fonts/**/*',
-    'bower_components/slick-carousel/slick/fonts/**/*'
+    'node_modules/font-awesome/fonts/**/*',
+    'node_modules/slick-carousel/slick/fonts/**/*'
   ])
-    .pipe(gulp.dest('fonts'));
+    .pipe(gulp.dest('assets/fonts'));
 });
 
 gulp.task('default', ['styles', 'scripts'], () => {
@@ -57,4 +56,6 @@ gulp.task('default', ['styles', 'scripts'], () => {
   gulp.watch(['_javascripts/**/*.js', '!_javascripts/javascripts/**/*.min.js'], ['scripts']);
 });
 
-gulp.task('production', ['styles', 'scripts', 'vendor:css']);
+gulp.task('vendor', ['vendor:css', 'vendor:fonts']);
+
+gulp.task('production', ['styles', 'scripts', 'vendor']);

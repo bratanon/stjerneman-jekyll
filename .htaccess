@@ -27,7 +27,7 @@ ErrorDocument 404 /404/index.html
     RewriteEngine On
     RewriteCond %{HTTPS} !=on
     RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-    RewriteRule ^ %{ENV:PROTO}://%1/test%{REQUEST_URI} [R=301,L]
+    RewriteRule ^ %{ENV:PROTO}://%1%{REQUEST_URI} [R=301,L]
 </IfModule>
 
 # ----------------------------------------------------------------------
@@ -36,7 +36,7 @@ ErrorDocument 404 /404/index.html
 <IfModule mod_rewrite.c>
    RewriteEngine On
    RewriteCond %{HTTPS} !=on
-   RewriteRule ^(.*)$ https://%{HTTP_HOST}/test/$1 [R=301,L]
+   RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
 </IfModule>
 
 # ----------------------------------------------------------------------
@@ -201,4 +201,9 @@ FileETag None
 
     ExpiresByType text/x-cross-domain-policy            "access plus 1 week"
 
+</IfModule>
+
+<IfModule mod_headers.c>
+  # Disable content sniffing, since it's an attack vector.
+  Header always set X-Content-Type-Options nosniff
 </IfModule>
