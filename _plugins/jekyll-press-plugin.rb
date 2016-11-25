@@ -1,3 +1,3 @@
 # _plugins/jekyll-press-plugin.rb
-require 'jekyll-press'
-@@mtimes = {}
+#require 'jekyll-press'
+#@@mtimes = {}
