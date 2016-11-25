@@ -1,6 +1,9 @@
 # Site settings
 title: stjerneman.com
 url: https://stjerneman.com
+version: 1.0.1
+author:
+  name: Emil Stjerneman
 
 # Handling Reading
 exclude: [
