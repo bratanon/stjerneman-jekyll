@@ -9,18 +9,18 @@
     "gulp:production": "gulp production"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.1",
-    "gulp-clean-css": "^2.0.13",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.0",
+    "gulp-clean-css": "^4.2.0",
     "gulp-concat": "^2.6.1",
-    "gulp-less": "^3.3.0",
-    "gulp-uglify": "^2.0.0"
+    "gulp-less": "^4.0.1",
+    "gulp-uglify": "^3.0.2"
   },
   "dependencies": {
     "font-awesome": "^4.7.0",
-    "highlight.js": "^9.8.0",
-    "jquery": "^3.1.1",
-    "normalize.css": "^5.0.0",
-    "slick-carousel": "^1.6.0"
+    "highlight.js": "^9.15.10",
+    "jquery": "^3.4.1",
+    "normalize.css": "^8.0.1",
+    "slick-carousel": "^1.8.1"
   }
 }

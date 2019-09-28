@@ -10,11 +10,17 @@ The Jekyll version of stjerneman.com
 `bundle install`
 
 ### Gulp
-`gulp`
+Creates everything and watching files
+`npm run gulp`
 
-`gulp production`
+Creates vendor stuff only
+`npm run vendor` 
+
+Creates everything
+`npm run production`
+
 
 ## Run
-`jekyll serve`
+`bundle exec jekyll serve`
 
-`jekyll build`
+`bundle exec jekyll build`
