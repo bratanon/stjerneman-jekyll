@@ -16,7 +16,7 @@ A quick guide on how to setup ntp with linux arch.
 
 NPT or Network Time Protocol is a protocol for clock synchronization.
 
-To use ntp in Linux arch you have to install the required package called `npt` https://www.archlinux.org/packages/?name=ntp.
+To use ntp in Linux arch you have to install the required package called `npt` [https://www.archlinux.org/packages/?name=ntp](https://www.archlinux.org/packages/?name=ntp).
 
 ```sh
 # pacman -S ntp

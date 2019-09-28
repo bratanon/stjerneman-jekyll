@@ -14,17 +14,17 @@ category: Library
 
 In this tutorial I will show you how to use jquery.maxlength.js on some common form fields
 
-To start, you will need to download a copy of the jQuery library http://docs.jquery.com/Downloading_jQuery.
+To start, you will need to download a copy of the jQuery library [http://docs.jquery.com/Downloading_jQuery][Downloading_jQuery].
 This plugin works with both 1.2.6 and 1.3.X. You will also have to download the plugin jquery.maxlength.js from github
-https://github.com/bratanon/maxlength
+[https://github.com/bratanon/maxlength][maxlength_repo]
 
 <!--more-->
 
 In this tutorial I will show you how to use jquery.maxlength.js on some common form fields
 
-To start, you will need to download a copy of the jQuery library http://docs.jquery.com/Downloading_jQuery.
+To start, you will need to download a copy of the jQuery library [http://docs.jquery.com/Downloading_jQuery][Downloading_jQuery].
 This plugin works with both 1.2.6 and 1.3.X. You will also have to download the plugin jquery.maxlength.js from github
-https://github.com/bratanon/maxlength
+[https://github.com/bratanon/maxlength][maxlength_repo]
 
 When you have downloaded the copy you will need to include it in your file.
 
@@ -118,3 +118,7 @@ $(document).ready(function(){
   $('#maxlenght-demo-textarea-slide, #maxlenght-demo-input-slide').maxlength({slider: true});
 });
 ```
+
+
+[Downloading_jQuery]: http://docs.jquery.com/Downloading_jQuery
+[maxlength_repo]: https://github.com/bratanon/maxlength

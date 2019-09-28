@@ -1,50 +1,33 @@
 # Site settings
 title: stjerneman.com
 url: https://stjerneman.com
-version: 1.0.1
+version: 1.0.2
 author:
   name: Emil Stjerneman
 
 # Handling Reading
 exclude: [
   "node_modules",
-  "bower_components",
   "gulpfile.js",
   "bower.json",
   "package.json",
+  "package-lock.json",
   "Gemfile",
   "Gemfile.lock"
 ]
 
-# Conversion
-markdown: redcarpet
 excerpt_separator: <!--more-->
 
 # Serving
-host: "192.168.10.110"
-baseurl: "" # does not include hostname
+baseurl: "" # the subpath of your site, e.g. /blog
 
 # Outputting
 permalink: /posts/:year/:month/:day/:title/
 timezone: Europe/Stockholm
 
-# Markdown Processors
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "strikethrough", "superscript", "with_toc_data"]
-
-# Jekyll Assets
-assets:
-  prefix: "/assets"
-  sources:
-    - "_assets/folder"
-
 collections:
   portfolio:
     output: true
     permalink: /portfolio/:title/
+    sort_by: date
 
-jekyll-press:
-  exclude: 'atom.xml' # Exclude files from processing - file name, glob pattern or array of file names and glob patterns
-  js_options: {}      # js minifier options
-  css_options: {}     # css minifier options
-  html_options: {}    # html minifier options

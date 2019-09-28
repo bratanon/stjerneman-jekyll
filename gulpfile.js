@@ -26,15 +26,14 @@ gulp.task('scripts', () =>  {
     .pipe(gulp.dest('assets/javascripts'));
 });
 
-
 gulp.task('vendor:css', () => {
   return gulp.src([
-    '_less/fonts.less',
     'node_modules/normalize.css/normalize.css',
     'node_modules/font-awesome/css/font-awesome.min.css',
     'node_modules/highlight.js/styles/github-gist.css',
     'node_modules/slick-carousel/slick/slick.less',
     '_less/vendors/slick-overrides.less',
+    '_less/fonts.less'
   ])
   .pipe(less())
   .pipe(autoprefixer())

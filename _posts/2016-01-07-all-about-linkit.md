@@ -15,7 +15,7 @@ In this post I'll try to answer these questions.
 
 <!--more-->
 
-The Drupal module [Linkit](https://www.drupal.org/project/linkit) has over the
+The Drupal module [Linkit](https://drupal.org/project/linkit) has over the
 years *(starting late 2009)* helped people around the world to manage links in
 the WYSIWYG editor in a very easy and friendly way.
 
@@ -51,7 +51,7 @@ I would also like to give a special thanks to Didrik "bollegrisen" Nordström
 [(@betamos)](https://twitter.com/betamos) that helped me with the Linkit
 7.x-2.x release. He wrote the BAC component used in 7.x-2.x and 7.x-3.x.
 
-The 19 of November 2015 the [first stable Drupal 8 version](https://www.drupal.org/news/drupal-8.0.0-released)
+The 19 of November 2015 the [first stable Drupal 8 version](https://drupal.org/news/drupal-8.0.0-released)
 were released and with that the need for a new compatible version of the
 beloved module Linkit.
 
@@ -77,7 +77,7 @@ in Linkit.
 Profiles have been around since 7.x-2.0 and is used as configuration containers.
 Most of the configuration in a profile consists of plugin configuration.
 
-In 7.x-2.x and 7.x-3.x profiles are exportable with the [Ctools](https://www.drupal.org/project/ctools)
+In 7.x-2.x and 7.x-3.x profiles are exportable with the [Ctools](https://drupal.org/project/ctools)
 exportable UI. In 8.x-4.x, profiles are configuration entities and can use the
 configuration API in Drupal core.
 
@@ -175,7 +175,7 @@ The 8.x-4.x version **doesn't** contain the field integration as there is now
 a simple version of this in Drupal core.
 
 ## IMCE integration
-Linkit 8.x-4.x is like 7.x-3.x is fully integrated with the [IMCE module](https://www.drupal.org/project/imce).
+Linkit 8.x-4.x is like 7.x-3.x is fully integrated with the [IMCE module](https://drupal.org/project/imce).
 On each profile, you can choose to enable IMCE and for 8.x-4.x also choose
 which stream wrapper to use.
 
@@ -184,7 +184,7 @@ core.
 
 ## Token integration
 Just like 7.x-2.x and 7.x-3.x, Linkit 8.x-4.x is fully integrated with the
-[Token module](https://www.drupal.org/project/token) for the result description.
+[Token module](https://drupal.org/project/token) for the result description.
 
 Basic token support still exists even if the token module isn't enabled.
 
@@ -192,8 +192,8 @@ Basic token support still exists even if the token module isn't enabled.
 [BAC](https://github.com/betamos/Better-Autocomplete) was actually first built
 to replace the autocomplete widget in Drupal 7 when using Linkit 7.x-2.x.
 
-* [#1147136](https://www.drupal.org/node/1147136): Proposal for Linkit 2.x UI
-* [#1149488](https://www.drupal.org/node/1149488): Develop custom autocompletion
+* [#1147136](https://drupal.org/node/1147136): Proposal for Linkit 2.x UI
+* [#1149488](https://drupal.org/node/1149488): Develop custom autocompletion
 
 BAC served very well in 7.x-2.x and 7.x-3.x, but in Linkit 8.x-4.x it's
 replaced by the [jQuery UI autocomplete](http://jqueryui.com/autocomplete/)

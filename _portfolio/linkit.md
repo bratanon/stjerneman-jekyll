@@ -36,10 +36,10 @@ default**. Linkit has three major advantages over traditional linking
 * Provides a link button, similar to the ordinary link button in most editors.
 * Can be attached to fields.
 * The button opens a **dialog** with an autocomplete field for searching content.
-* Support for [IMCE](https://www.drupal.org/project/imce "IMCE on Drupal.org").
+* Support for [IMCE](https://drupal.org/project/imce "IMCE on Drupal.org").
 * Settings are handled by profiles, similar to the profiles of the WYSIWYG module. Thus, it is possible to customize
   the behavior of Linkit in detail.
-* Works with and without [Pathologic](https://www.drupal.org/project/pathologic "Pathologic on Drupal.org").
+* Works with and without [Pathologic](https://drupal.org/project/pathologic "Pathologic on Drupal.org").
 * Internal absolute URL:s converts automatically into Drupal paths, very simple for users who are used to copy-pasting.
 * Tested to **work in multiple server environments**, e.g. with and without clean URL:s, Drupal installation in a
   subdirectory or on a different port.
@@ -60,19 +60,19 @@ After the installation, you have to create a Linkit profile. The profile will co
 
 ## Dependencies
 * [Chaos tool suite (ctools)](http://drupal.org/project/ctools "Chaos tool suite (ctools) on Drupal.org")
-* [Entity API](https://www.drupal.org/project/entity "Entity API on Drupal.org")
+* [Entity API](https://drupal.org/project/entity "Entity API on Drupal.org")
 
 ## Editor support
-* [WYSIWYG](https://www.drupal.org/project/wysiwyg "Wysiwyg on Drupal.org") with TinyMCE or CKEditor.
-* [CKEditor](https://www.drupal.org/project/ckeditor "CKEditor on Drupal.org").
+* [WYSIWYG](https://drupal.org/project/wysiwyg "Wysiwyg on Drupal.org") with TinyMCE or CKEditor.
+* [CKEditor](https://drupal.org/project/ckeditor "CKEditor on Drupal.org").
 
 ## Extra plugins
-* [Linkit panel pages](https://www.drupal.org/project/linkit_panel_pages "Linkit panel pages on Drupal.org").
-* [Linkit Views](https://www.drupal.org/project/linkit_views "Linkit Views on Drupal.org") (is included in 6.x)
-* [Linkit Picker](https://www.drupal.org/project/linkit_picker "Linkit Picker on Drupal.org").
-* [Linkit Target](https://www.drupal.org/project/linkit_target "Linkit Target on Drupal.org").
+* [Linkit panel pages](https://drupal.org/project/linkit_panel_pages "Linkit panel pages on Drupal.org").
+* [Linkit Views](https://drupal.org/project/linkit_views "Linkit Views on Drupal.org") (is included in 6.x)
+* [Linkit Picker](https://drupal.org/project/linkit_picker "Linkit Picker on Drupal.org").
+* [Linkit Target](https://drupal.org/project/linkit_target "Linkit Target on Drupal.org").
   Adds the target attribute. (In Linkit core since 7.x-3.0)
-* [Linkit Markdown](https://www.drupal.org/project/linkit_markdown "Linkit Markdown on Drupal.org").
+* [Linkit Markdown](https://drupal.org/project/linkit_markdown "Linkit Markdown on Drupal.org").
 
 ## API
 Our new **robust and flexible API**
